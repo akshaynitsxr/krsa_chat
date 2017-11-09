@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+
+
+
+/*http://codepen.io/drehimself/pen/KdXwxR?utm_source=bypeople
+http://nicolasgallagher.com/pure-css-speech-bubbles/demo/*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.chat .chat-history {
+    border-bottom: 2px solid white;
+}
+
+.chat .chat-history .message-data {
+    margin-bottom: 15px;
+}
+
+.chat .chat-history .message-data-time {
+    color: #a8aab1;
+    padding-left: 6px;
+}
+
+.chat .chat-history .message {
+    color: white;
+    padding: 18px 0;
+    line-height: 26px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 90%;
+    position: relative;
+}
+
+.chat .chat-history .you-message {
+    color: #031f3b;
+    background:
+}
+
+.url-data {
+    display: block;
+}
+
+.chat .chat-history .me-message {
+    background: #E9724C;
+}
+
+.chat .chat-history .me-message:after {
+    border-color: #E9724C transparent;
+    right: 20px;
+    top: -15px;
+    left: auto;
+    bottom: auto;
+}
+
+.chat .chat-message .fa-file-o,
+.chat .chat-message .fa-file-image-o {
+    font-size: 16px;
+    color: gray;
+    cursor: pointer;
+}
+
+.chat-ul li {
+    list-style-type: none;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    overflow:
+}
+
+.you {
+    color: #CCDBDC;
+}
+
+.me {
+    color: #E9724C;
+}
+
+#input-msg {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.imageIcon {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 12px 0 12px;
+}
+
+.gifIcon {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 12px 0 12px;
+}
+
+.description {
+    padding: 0 12px;
+}
+
+.heading {
+    padding-left: 10px;
+    color: #0f0f0f font-size: 10px;
+}
+
+.border-column {
+    background-color: #e8e8e8;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -4px;
+    width: 4px;
+    z-index: 1;
+}
+
+.chat-ul {
+    padding-left: 0px;
+}
+
+.url-data,
+.gif {
+    border-left: solid #e8e8e8 3px;
+    margin-top: 7px;
+}
